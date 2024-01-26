@@ -4,7 +4,7 @@
 }
 
 /* Drill 2 - Write your code solution below */
-.purple{
+div .purple p{
     color: orangered;
 }
 .blue{
@@ -13,15 +13,19 @@
 
 
 /* Drill 3 - Write your code solution below */
-.dashed span{
+div.dashed span{
     color: magenta;
 }
 
 
 /* Drill 4 - Write your code solution below */
-
+div.shadowed p{
+    background-color: skyblue;
+} 
 
 
 /* Drill 5 - Write your code solution below */
-
+div.dog-days img{
+    border-radius: 50%;
+}
 

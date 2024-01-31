@@ -1,0 +1,46 @@
+* {
+    box-sizing: border-box;
+}
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+.single-column{
+    width: 50%;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+
+.first-container{
+    background-color: rgb(252, 238, 130);
+    padding: 48px 0px;
+    text-align: center;
+}
+
+.second-container{
+    background-color: #DE7877;
+    padding: 48px 0px;
+    /*text-align: center;*/
+}
+h1 {
+    text-align: center;
+}
+
+p span{
+    font-weight: bold;
+}
+
+.second-container img{
+    text-align: center;
+}
+
+.littleguy{
+    text-align: center;
+}
+
+.third-container{
+    padding: 48px 0px;
+    text-align: center;
+}

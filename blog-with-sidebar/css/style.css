@@ -1,0 +1,103 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: pink;
+}
+
+#grid-layout{
+    display: grid;
+    grid-template-columns: 1fr 450px 250px 1fr;
+    grid-template-areas: ". content sidebar .";
+    margin: 36px 0px;
+}
+
+#sidebar-content{
+    grid-area: sidebar;
+    padding: 18px;
+}
+
+#main-content{
+    background-color: rgb(245, 111, 138);
+    grid-area: content;
+    margin: 0px 36px;
+    border: 3px dashed rgb(113, 3, 25);
+}
+
+#main-content p{
+    margin: 36px;
+    color: rgb(113, 3, 25);
+}
+
+#main-content h1,
+h3{
+    padding-left: 35px;
+    padding-right: 35px;
+    color: rgb(113, 3, 25);
+    margin: 0px;
+}
+
+#main-content h1{
+    
+}
+
+#main-content h5{
+    padding-left: 35px;
+    margin-bottom: 12px
+}
+
+#main-content h6{
+    padding-left: 35px;
+    margin-top: 15px;
+}
+
+#main-content img{
+    padding-left: 50px;
+    margin-left: 50px;
+    padding-bottom: 25px;
+}
+
+#sidebar-content h2{
+    background-color: rgb(96, 5, 11);
+    color: white;
+    padding: 12px;
+    font-size: 18px;
+    margin: 0px;
+}
+
+#sidebar-content ul{
+    background-color: rgb(250, 156, 162);
+    margin: 0px 0px 36px 0px;
+    border-left: 5px dashed rgb(96, 5, 11);
+    border-right: 5px dashed rgb(96, 5, 11);
+    border-bottom: 5px dashed rgb(96, 5, 11);
+    list-style-type: none;
+    padding: 0px 12px;
+
+}
+
+#sidebar-content a{
+    text-decoration: none;
+    color: rgb(96, 5, 11);
+    margin: 0px;
+}
+
+#sidebar-content li{
+    padding: 8px 0px;
+    border-bottom: 1px dotted rgb(96, 5, 11);
+    margin: 0px;
+}
+
+#sidebar-content li:hover{
+    background-color: rgb(255, 70, 82);
+    margin: 0px;
+}
+
+
+#sidebar-content li:last-child{
+    border-bottom: 0px;
+    
+}

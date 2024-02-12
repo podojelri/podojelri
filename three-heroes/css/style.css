@@ -1,0 +1,115 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#hero1 {
+    background-image: url("../images/cdc-5D867S9b5kY-unsplash.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    position: relative;
+}
+
+#hero1 .hero-content {
+    position: absolute;
+    top: 10%;
+    left: 15%;
+}
+
+#hero1 h2 {
+    font-size: 4vw;
+    margin-bottom: 1vh;
+    margin-right: 5vw;
+}
+
+#hero1 h4 {
+    font-size: 1vw;
+    margin: 5px 5vw 10px 0px;
+}
+
+#hero1 a {
+    font-size: 1.5vw;
+    display: inline-block;
+    background-color: white;
+    color: #333333;
+    text-decoration: none;
+    padding: 15px;
+    margin: 2vh 2vw 10vh 10px;
+}
+
+#hero2 {
+    background-image: url("../images/elena-mozhvilo-UspYqrVBsIo-unsplash.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center bottom;
+    display: flex;
+    justify-content: center;
+    align-items: start;
+}
+
+    #hero2 .hero-content {
+        text-align: center;
+        color: white;
+        padding-top: 1vh;
+    }
+
+    #hero2 h2 {
+        font-size: 5vw;
+        margin: 20px;
+        position: 
+    }
+
+    #hero2 h4 {
+        font-size: 2vw;
+        margin: 0px;
+    }
+    
+    #hero2 a {
+        font-size: 1.5vw;
+        display: inline-block;
+        background-color: white;
+        color: #333333;
+        text-decoration: none;
+        padding: 24px;
+        margin: 5vh 2vw 10vh;
+    }
+
+    #hero3 {
+        background-image: url("../images/clem-onojeghuo-zlABb6Gke24-unsplash.jpg");
+        height: 100vh;
+        background-size: cover;
+        background-position: center center;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: flex-end;
+    }
+
+    #hero3 h2 {
+        font-size: 4vw;
+        margin-bottom: 5vh;
+        margin-right: 20vw;
+        color: #e3a136;
+    }
+    
+    #hero3 h4 {
+        font-size: 2vw;
+        margin: 0px;
+        color: #e3a136;
+
+    }
+    
+    #hero3 a {
+        font-size: 1vw;
+        display: inline-block;
+        background-color: #542e03;
+        color: #e3a136;
+        text-decoration: none;
+        padding: 24px;
+        margin: 5vh 5vw 10vh 0px;
+    }

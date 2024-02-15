@@ -5,6 +5,7 @@
 body {
     margin: 0px;
     font-family: sans-serif;
+    background-color: #653716;
 }
 
 #layout {
@@ -26,12 +27,8 @@ body {
     object-fit: cover;
     margin: 24px;
     border-radius: 24px;
-    border: dashed 1px brown;
 }
 
-.horizontal-masonry-header span {
-    font-style: italic;
-}
 
 .horizontal-masonry-header .hero-content {
     position: absolute;
@@ -39,8 +36,9 @@ body {
     top: 20%;
     padding: 24px;
     border-radius: 24px;
-    border: solid 5px;
-    background-color: #ceaaaa;
+    color: white;
+    border: solid 5px #422917;
+    background-color: #653716;
 }
 
 #center-column {
@@ -52,60 +50,77 @@ body {
 
 .card {
     width: 350px;
-    border: 2px solid rgb(254, 215, 221);
+    border: 2px solid #422917;
+    background-color: #7e4c29;
+    color: white;
     border-radius: 5px;
     padding: 10px;
-    box-shadow: 4px 4px 12px #ceaaaa;
+    box-shadow: 4px 4px 12px #2b1b0f;
     display: flex;
     flex: 1;
     flex-direction: column;
 }
 
-.card img {
-    width: 100%;
-    height: 250px;
-    object-fit: contain;
-}
-
 .card h2 {
-    font-size: 36px;
+    font-size: 40px;
     margin-top: 12px;
     text-align: center;
     font-family: 'Courier New', Courier, monospace;
 }
 
 .card a {
-    color: rgb(246, 206, 255);
+    color: #87479A;
     text-decoration: none;
     font-size: 20px;
     font-weight: bold;
-    background-color: rgb(111, 0, 128);
+    background-color: #472463;
     display: inline-block;
     width: 100%;
     padding: 10px;
     text-align: center;
-    border: 3px solid rgb(36, 0, 38);
+    border: 3px solid #261237;
 }
 
 .card a:hover {
-    background-color: transparent;
-    border: 3px solid rgb(36, 0, 38);
-    color: rgb(111, 0, 128);
+    border: 3px solid;
+    color: rgb(152, 5, 175);
     transition: 
     background-color 0.5s,
     color 0.5s;
 }
 
-.horizontal-masonry-gallery {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 24px;
+.basic-grid-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 2fr;
+    padding: 24px;
+    gap: 4px;
 }
 
-.horizontal-masonry-gallery img {
-    height: 300px;
+.basic-grid-gallery img {
     width: 100%;
-    flex: 1;
-    object-fit :cover;
-    box-shadow: 4px 5px rgb(88, 44, 0);
 }
+
+.second-grid-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 24px;
+    gap: 4px;
+}
+
+.second-grid-gallery img {
+    width: 100%;
+}
+
+.third-grid-gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    padding: 24px;
+    gap: 4px;
+    width: 550px;
+
+}
+
+.third-grid-gallery img {
+    width: 100%;
+}
+

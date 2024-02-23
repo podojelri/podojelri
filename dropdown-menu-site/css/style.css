@@ -1,0 +1,127 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#navbar {
+    display: flex;
+    background: linear-gradient(
+        to bottom,
+        pink,
+        magenta
+    );
+    align-items: center;
+}
+
+#navbar a {
+    display: inline-block;
+    text-decoration: none;
+    color: white;
+    padding: 24px;
+}
+
+#navbar #logo-link {
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 36px;
+    padding-top: 13px;
+    padding-bottom: 12px;
+}
+
+
+#layout {
+    border: solid 1px  pink;
+    background: linear-gradient(
+        to bottom,
+        pink,
+        magenta
+    );
+    margin: 24px;
+    border-radius: 24px;
+    width: 450px;
+
+}
+
+h1 {
+    text-align: center;
+}
+
+#layout img {
+    width: 350px;
+    margin: 24px;
+}
+
+#layout p {
+    margin: 24px;
+}
+
+.dropdown-container {
+    position: relative;
+}
+
+.dropdown-menu {
+    position: absolute;
+    opacity: 0;
+    visibility: hidden;
+    transition: 
+        visibility 0.25s,
+        opacity 0.25s;
+}
+
+.dropdown-menu a {
+    background-color: rgb(173, 0, 121);
+    width: 100%;
+    min-width: 200px;
+}
+
+#navbar .dropdown-menu a:hover {
+    background: rgb(224, 0, 224);
+}
+
+.dropdown-container:hover .dropdown-menu {
+    opacity: 1;
+    visibility: visible;
+}
+
+.dropdown-container:last-child .dropdown-menu {
+    right: 0px;
+}
+
+#hero-4 {
+    background-image: url("../images/jamie-street-MoDcnVRN5JU-unsplash.jpg");
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#hero-4 .hero-content {
+    text-align: center;
+    color: white;
+    padding-top: 20vh;
+}
+
+#hero-4 a {
+    display: inline-block;
+    background-color: white;
+    color: #333333;
+    text-decoration: none;
+    padding: 24px;
+    font-size: 1.5vw;
+    margin: 5vh 2vw 10vh;
+}
+
+#hero-4 h2 {
+    font-size: 8vw;
+    margin-bottom: 5vh;   
+}
+
+#hero-4 h4 {
+    font-size: 3vw;
+    margin: 0px;
+}

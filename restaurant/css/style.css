@@ -1,0 +1,86 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+}
+
+#navbar {
+    display: flex;
+    background-color: #e9a3bb;
+    align-items: center;
+    border-bottom: solid 50px #b5216c;
+    
+}
+
+#navbar a {
+    text-decoration: none;
+    color: white;
+    padding: 24px;
+    margin: 0px;
+}
+
+#navbar img {
+    width: 200px;
+}
+
+#navbar #logo-link {
+    margin: 0px;
+    padding: 0px;
+    margin-right: auto;
+}
+
+.icon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#navbar .icon img {
+    width: 50px;
+}
+
+#hero-4 {
+    background-image: url("../images/eve-lyn-j6ZC1cds9a4-unsplash.jpg");
+    height: 100vh;
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;  
+}
+
+#hero-4 .hero-content {
+    color: white;
+    padding-top: 20vh;
+    text-align: center;
+}
+
+#hero-4 a {
+    display: inline-block;
+    background-color: white;
+    color: #333333;
+    text-decoration: none;
+    padding: 24px;
+    font-size: 1.5vw;
+    margin: 5vh 2vw 10vh;
+}
+
+#hero-4 h2 {
+    font-size: 8vw;
+    margin-bottom: 5vh;   
+}
+
+
+@media screen and (max-width:1000px) and (min-width: 801px){
+}
+
+@media screen and (max-width: 800px) {
+    #navbar .icon img {
+        display: none;
+    }
+    
+    
+}

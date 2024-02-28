@@ -5,6 +5,7 @@
 body {
     margin: 0px;
     font-family: sans-serif;
+    background-color: #724591;
 }
 
 #navbar {
@@ -36,6 +37,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+    font-family: 'caffe_lungo_demoregular';
 }
 
 #navbar .icon img {
@@ -60,17 +62,76 @@ body {
 
 #hero-4 a {
     display: inline-block;
-    background-color: white;
+    background-color: #b5216c;
     color: #333333;
     text-decoration: none;
     padding: 24px;
     font-size: 1.5vw;
-    margin: 5vh 2vw 10vh;
+
 }
 
-#hero-4 h2 {
-    font-size: 8vw;
-    margin-bottom: 5vh;   
+
+
+.menutop {
+    margin: 0px;
+    padding: 0px;
+    font-size: 50px;
+    font-family: 'caffe_lungo_demoregular'; 
+    text-align: center;
+
+}
+
+#layout {
+    text-align: center;
+    margin: 0px;
+    padding: 0px;
+    font-size: larger;
+    border-bottom: solid 1px #b5216c;
+}
+
+#layout .hero-content {
+    background-size: cover;
+    background-position: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+
+#header {
+    position: sticky;
+    top: 0px;
+}
+@font-face {
+    font-family: 'caffe_lungo_demoregular';
+    src: url('caffelungodemo-webfont.woff2') format('woff2'),
+         url('caffelungodemo-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+#menu-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    margin-left: 24px;
+    margin-top: 24px;
+}
+
+.item {
+    margin: 24px;
+}
+
+.item h2 {
+    font-family: caffe_lungo_demoregular;
+    font-size: 45px;
+    margin: 0px;
+    padding: 0px;
+}
+
+.item p {
+    font-style: italic;
 }
 
 

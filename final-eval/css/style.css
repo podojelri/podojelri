@@ -1,0 +1,107 @@
+@import url('https://fonts.googleapis.com/css2?family=Saira+Stencil+One&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0px;
+    font-family: sans-serif;
+    background-color: rgb(117, 196, 117);
+}
+
+.single-column {
+    width: 50%;
+    min-width: 400px;
+    margin-top: 0px;
+    padding: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.single-column h1 {
+    font-family: "Saira Stencil One", sans-serif;
+    padding: 0px;
+    margin: 0px;
+    font-size: 48px;
+}
+
+
+.light-container {
+    padding: 48px 0px;
+}
+
+.card-container {
+    display: flex;
+    flex-direction: row;
+}
+
+.card {
+    flex: 1;
+    text-align: center;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.card p {
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.middle {
+    align-items: center;
+    font-weight: bold;
+    font-size: 100px;
+    margin: 36px;
+}
+
+.single-column2 {
+    width: 50%;
+    min-width: 400px;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+.single-column2 span {
+    font-weight: bold;
+    color: white;
+}
+
+.cards a {
+    color: white;
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: bold;
+    background-color: darkgreen;
+    display: inline-block;
+    
+    padding: 10px;
+    margin: 24px;
+    text-align: center;
+    border: 3px solid white;
+}
+
+.cards a:hover {
+    background-color: transparent;
+    border: 3px solid white;
+    color: white;
+    transition: 
+    background-color 0.5s,
+    color 0.5s;
+}
+
+
+@media screen and (max-width: 800px) {
+    .card-container {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    .single-column2 {
+        justify-content: center;
+        
+    }
+}

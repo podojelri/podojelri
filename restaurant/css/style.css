@@ -4,15 +4,15 @@
 
 body {
     margin: 0px;
-    font-family: sans-serif;
-    background-color: #724591;
+    background-color: #865b9d;
+    font-family: 'caffe_lungo_demoregular';
 }
 
 #navbar {
     display: flex;
-    background-color: #e9a3bb;
+    background-color: #edbcd1;
     align-items: center;
-    border-bottom: solid 50px #b5216c;
+    border-bottom: solid 50px #b8427d;
     
 }
 
@@ -22,7 +22,7 @@ body {
 
 #navbar a {
     text-decoration: none;
-    color: white;
+    color: #b8427d;
     padding: 24px;
     margin: 0px;
 }
@@ -50,14 +50,14 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
-    font-family: 'caffe_lungo_demoregular';
+    
 }
 
 #navbar .icon img {
     width: 50px;
 }
 
-#hero-4 {
+#hero {
     background-image: url("../images/eve-lyn-j6ZC1cds9a4-unsplash.jpg");
     height: 100vh;
     background-size: cover;
@@ -67,51 +67,68 @@ body {
     align-items: center;  
 }
 
-#hero-4 .hero-content {
-    color: white;
-    padding-top: 20vh;
+#hero .hero-content {
     text-align: center;
 }
 
-#hero-4 a {
+#hero a {
     display: inline-block;
-    background-color: #b5216c;
-    color: #333333;
+    background-color: #b8427d;
+    color: #fffdfd;
     text-decoration: none;
     padding: 24px;
-    font-size: 1.5vw;
+    border-radius: 24px;
 
+}
+
+.hero-content img {
+    width: 100%;
 }
 
 
 
 .menutop {
-    margin: 0px;
-    padding: 0px;
     font-size: 50px;
     font-family: 'caffe_lungo_demoregular'; 
     text-align: center;
-
+    color: #edbcd1;
 }
+
+#layout h2 {
+    margin: 35px;
+    color: #edbcd1;
+}
+
+.menutop h1 {
+    margin: 0px;
+    padding: 0px;
+}
+
 
 #layout {
     text-align: center;
-    margin: 0px;
-    padding: 0px;
-    font-size: larger;
-    border-bottom: solid 1px #b5216c;
+    border-bottom: solid 10px #b8427d;
 }
 
 #layout .hero-content img {
-    width: 100%
+    background-position: center center;
+    margin-bottom: 30px;
 }
 
-
+#lowbar img {
+    width: 200px;
+    margin: 0px;
+    padding: 0px;
+    margin-right: auto;
+    display: inline-block;
+   
+}
 
 #header {
     position: sticky;
     top: 0px;
 }
+
 @font-face {
     font-family: 'caffe_lungo_demoregular';
     src: url('caffelungodemo-webfont.woff2') format('woff2'),
@@ -131,10 +148,10 @@ body {
 .item {
     margin: 24px;
     text-align: center;
+    color: #edbcd1;
 }
 
 .item h2 {
-    font-family: caffe_lungo_demoregular;
     font-size: 45px;
     margin: 0px;
     padding: 0px;
@@ -144,27 +161,6 @@ body {
     font-style: italic;
 }
 
-#lowbar #logo-link {
-    margin: 0px;
-    padding: 0px;
-    margin-right: auto;
-    display: inline-block;
-}
-
-#lowbar img {
-    width: 400px;
-}
-
-#lowbar {
-    display: flex;
-    background-color: #e9a3bb;
-    height: 350px;
-    align-items: center;
-    background-image: url('../images/shape.png');
-    background-repeat: no-repeat;
-    background-size: 350px;
-    
-}
 
 
 @media screen and (max-width: 800px) {
@@ -174,28 +170,43 @@ body {
     }
 
     #navbar #logo-link2 {
-        display: contents;
+        display: flex;
+        align-items: center;
+
+    }
+
+
+    #layout .hero-content img {
+        width: 100%;
 
     }
 
 
     .dropdown-menu .icon img {
         visibility: hidden;
+
     }
     
     #navbar a {
-        display: inline-block;
+        display: flex;
+        flex-wrap: wrap;
         text-decoration: none;
-        color: white;
+        color: #b8427d;
         padding: 24px;
     }
     
     #navbar #logo-link2 {
         margin-right: auto;
-        font-weight: bold;
         font-size: 36px;
         padding-top: 13px;
         padding-bottom: 12px;
+    }
+
+    #menu-items {
+        display: grid;
+        grid-template-columns: 1fr;
+        margin-left: 24px;
+        margin-top: 24px;
     }
     
 }

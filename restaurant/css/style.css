@@ -16,6 +16,10 @@ body {
     
 }
 
+#navbar .dropdown-menu {
+    display: flex;
+}
+
 #navbar a {
     text-decoration: none;
     color: white;
@@ -40,6 +44,7 @@ body {
     margin-right: auto;
     display: none;   
 }
+
 
 .icon {
     display: flex;
@@ -97,12 +102,8 @@ body {
     border-bottom: solid 1px #b5216c;
 }
 
-#layout .hero-content {
-    background-size: cover;
-    background-position: center center;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+#layout .hero-content img {
+    width: 100%
 }
 
 
@@ -143,77 +144,58 @@ body {
     font-style: italic;
 }
 
-
-@media screen and (max-width:1000px) and (min-width: 801px){
+#lowbar #logo-link {
+    margin: 0px;
+    padding: 0px;
+    margin-right: auto;
+    display: inline-block;
 }
 
+#lowbar img {
+    width: 400px;
+}
+
+#lowbar {
+    display: flex;
+    background-color: #e9a3bb;
+    height: 350px;
+    align-items: center;
+    background-image: url('../images/shape.png');
+    background-repeat: no-repeat;
+    background-size: 350px;
+    
+}
+
+
 @media screen and (max-width: 800px) {
-    #navbar .icon img {
+
+    #navbar #logo-link {
         display: none;
     }
 
-    #navbar {
-        flex-wrap: wrap;
-        justify-content: flex-end;
+    #navbar #logo-link2 {
+        display: contents;
+
     }
 
-    #navbar #logo-link {
-        
+
+    .dropdown-menu .icon img {
+        visibility: hidden;
     }
     
-    #menu-items {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-    }
-
-    #navbar #logo-link {
-        margin: 0px;
-        padding: 0px;
-        margin-right: auto;
-        display: none;
+    #navbar a {
+        display: inline-block;
+        text-decoration: none;
+        color: white;
+        padding: 24px;
     }
     
     #navbar #logo-link2 {
-        margin: 0px;
-        padding: 0px;
         margin-right: auto;
-        display: inline-block;   
+        font-weight: bold;
+        font-size: 36px;
+        padding-top: 13px;
+        padding-bottom: 12px;
     }
-    
-    .dropdown-menu {
-        visibility: visible;
-    }
-    .dropdown-container {
-        margin-right: 24px;
-    }
-    
-    .dropdown-menu {
-        position: absolute;
-        opacity: 0;
-        visibility: hidden;
-        transition: 
-            visibility 0.25s,
-            opacity 0.25s;
-    }
-    
-    .dropdown-menu a {
-        background-color: #b5216c;
-        width: 100%;
-        min-width: 200px;
-    }
-    
-    #navbar .dropdown-menu a:hover {
-        background: #724591;
-    }
-    
-    .dropdown-container:hover .dropdown-menu {
-        opacity: 1;
-        visibility: visible;
-    }
-    
-    .dropdown-container:last-child .dropdown-menu {
-        right: 0px;
-    }
-    
     
 }
